@@ -1,0 +1,8 @@
+Introduction
+You will code a multi-processing and multi-threading program that finds if the given number is prime. 
+The numbers to be searched will be given as command line arguments. You should use the simple trial division method. 
+In this method, you will simply check if the given number(n) is divisible by any number in the range of (2 - n/2). 
+For each number you need to create a process. 
+Each process should create 4 threads to check a part of the range ((2-n/8), (n/8-n/4), (n/4-3n/8), (3n/8-n/2)). 
+Threads will be responsible for checking divisibility of numbers in the assigned range. 
+Upon completion of threads, processes should print if the number is a prime or not.
